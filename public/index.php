@@ -5,12 +5,12 @@ declare(strict_types=1);
 require_once '../vendor/autoload.php';
 
 $v = new \Currency\Currency('USD');
-$g = new \Currency\Currency('UAH');
+$g = new \Currency\Currency('usd');
 $h = $v->equals($g);
 
 
 $b = new \Money\Money(1.5, new \Currency\Currency('USD'));
-$c = new \Money\Money(15, new \Currency\Currency('USD'));
+$c = new \Money\Money(15, new \Currency\Currency('usd'));
 
 $d = $b->add($c);
 

@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+
 namespace Money;
 
 use Currency\Currency;
@@ -25,6 +26,7 @@ class Money
 
     private function setAmount(int|float $amount)
     {
+
         $this->amount = $amount;
     }
 
@@ -37,6 +39,7 @@ class Money
     {
         $this->currency = $currency;
     }
+
 
     public function equals(Money $money): bool
     {
